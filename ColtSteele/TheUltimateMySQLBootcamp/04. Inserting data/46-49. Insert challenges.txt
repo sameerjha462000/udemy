@@ -1,0 +1,32 @@
+
+TASK :=
+
+	Create a table people
+		-- first_name - 20 char limit
+		-- last_name  - 20 char limit
+		-- age
+
+	Entries in the table 
+		-- Tina, Belcher, 13
+		-- Bob, Belcher, 42
+	
+	
+	and lastly insert multiple people into the table
+
+		-- Linda, Belcher, 45
+		-- Phillip, Frond, 38
+		-- Calvin, Fischoeder, 70
+
+Solution := 
+
+	CREATE DATABASE people_app; //  create database command
+	USE people_app; //  change the current database
+	CREATE TABLE people(first_name VARCHAR(20), last_name VARCHAR(20), age INT); // create table command
+	INSERT INTO people(first_name,last_name,age) VALUES ('Tina','Belcher',13);
+	INSERT INTO people(age,first_name,last_name) VALUES ('Bob','Belcher',42); //  order change insert
+	INSERT INTO people(first_name,last_name,age) // multiple values insert
+	VALUES  ('Linda','Belcher',45),
+		('Phillip','Frond',38),
+		('Calvin','Fischoeder',70);	
+
+

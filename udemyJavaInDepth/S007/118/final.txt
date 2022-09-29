@@ -1,0 +1,32 @@
+final variables -- Whose values never change once initialized 
+
+1. In case of primitives, final says that value is constant. For example := 
+    
+    -- public static final double PI = 3.14;
+
+2. But in case of reference types, reference is constant and not the object content
+
+    -- public static final int[] PRIMES_TILL_7 = new int[] {2,3,5,7}; Then 
+    
+       PRIMES_TILL_7[2] = 90; (This is legal)
+	     PRIMES_TILL_7 = new int[20]; (This is illegal)
+       
+       
+3. final variables can be used with instance,local and static modifiers as well. 
+
+
+4. final instance variables
+	   -- constant for life of the object
+	   -- MUST be initialized in
+	   	  -- Declaration
+	   	  -- Constructor
+	      -- Instance initializer
+        
+    A final variable which is not initialized during declaration and initialized in ctro or II is called blank final.
+        
+5. final static variable
+     -- these are independent of number of the instances of the class.
+     -- They must be initialized in SI(static initializer) or initialized during declaration phase.
+     -- NAMING CONVENTION 
+        -- ALL CAPS WITH UNDERSCORE BETWEEN INDIVIDUAL WORDS
+           For example := public static final int MAX_ROOMS_PER_HOUSE = 3;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 30px;
+        margin: 40px;
+
+        /* FLEXBOX */
+        /* To use a flexbox we first need to have a container so that we can convert that container into a flexbox
+           To convert a container into a flexbox, we use display:flex property.
+           The individual items in the flexbox are known as flex-items.
+
+           We have two types of properties -- flex-container properties and flex-items properties.
+        */
+
+        display: flex;
+
+        /* align-items is used to align items across the cross-axis and by default it is vertical */
+        align-items: center;
+
+        /* justify-content is used to align items across the main-axis and by default it is the horizontal axis */
+        justify-content: flex-start;
+        /* Height of the individual flex items is decided by the flex item having the maximum height */
+        /* By default it is "stretch" */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* gap: 30px; */
+      }
+
+      .el {
+        /* DEFAULTS */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;  */
+
+        /* flex-basis is used to set the width of individual element */
+        /* flex-basis: 200px; */
+
+        /* flex-shrink means that whether the flexbox is allowed to shrink elements or not */
+        flex-shrink: 0; /* Now the flexbox would not shrink the elements*/
+
+        /* flex-grow means that whether the elements are allowed to grow or not */
+        /* flex-grow: 1; */
+      }
+
+      .el--1 {
+        flex-grow: 1;
+        align-self: flex-start;
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el--1">HTML</div>
+      <div class="el el--2">and</div>
+      <div class="el el--3">CSS</div>
+      <div class="el el--4">are</div>
+      <div class="el el--5">amazing</div>
+      <div class="el el--6">languages</div>
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
+    </div>
+  </body>
+</html>

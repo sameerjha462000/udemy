@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/42326469/what-is-the-point-using-as-keyword-in-sql-when-aliasing-can-be-done-without-it

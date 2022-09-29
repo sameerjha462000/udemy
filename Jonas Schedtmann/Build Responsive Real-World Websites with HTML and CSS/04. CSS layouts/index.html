@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<!-- "lang" attribute tells us the language that we are going to use in the document -->
+<html lang="en">
+  <head>
+    <!-- To specify the character set that we will be using in the document we use "charset" attribute in the "meta" element -->
+    <meta charset="UTF8" />
+    <title>Basic language of the web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- We have 6 different types of heading tags -->
+      <!-- 
+      <h1>The Basic Language of the Web: HTML</h1>
+      <h2>The Basic Language of the Web: HTML</h2>
+      <h3>The Basic Language of the Web: HTML</h3>
+      <h4>The Basic Language of the Web: HTML</h4>
+      <h5>The Basic Language of the Web: HTML</h5>
+      <h6>The Basic Language of the Web: HTML</h6>
+   -->
+      <header class="main-header clearfix">
+        <h1>📘 The Code Magazine</h1>
+        <!-- nav does nothing, It is just for structuring our page -->
+        <nav>
+          <a href="blog.html">Blog</a>
+          <!-- Goes to the top of the page if we write #-->
+          <a href="#">Challenges</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">CSS Grid</a>
+        </nav>
+        <div class="clear"></div>
+      </header>
+      <div class="row">
+        <article>
+          <header class="post-header">
+            <!-- <p>Test paragraph</p> -->
+            <h2>The Basic Language of the Web: HTML</h2>
+            <div class="author-box">
+              <img
+                src="img/laura-jones.jpg"
+                alt="Laura Jones"
+                height="50px"
+                width="50px"
+                class="weird author-img"
+              />
+              <!-- "b" tag is an old tag, from HTML5 we are supposed to use strong tag for semantic purposes.-->
+              <!-- 
+              <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p> 
+            -->
+              <p id="author" class="author">
+                Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+              </p>
+            </div>
+            <!-- <span>My name is Abhishek Jha</span> -->
+            <img
+              src="img/post-img.jpg"
+              alt="HTML code on a screen"
+              height="200px"
+              width="500px"
+              class="post-img"
+            />
+          </header>
+
+          <p>
+            All modern websites and web applications are built using three
+            <!-- "i" tag was used in older versions of HTML, but that didn't have a semantic meaning. For this we use something known as "em" tag -->
+            <!-- 
+        <i>fundamental</i> 
+      -->
+            <em> fundamental </em>
+
+            technologies: HTML, CSS and JavaScript. These are the languages of
+            the web.
+          </p>
+
+          <h3>What is HTML</h3>
+          <p>
+            HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+            <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+            language that web developers use to structure and describe the
+            content of a webpage (not a programming language).
+          </p>
+          <p>
+            HTML stands for HyperText Markup Language. It's a markup language
+            that web developers use to structure and describe the content of a
+            webpage (not a programming language).
+          </p>
+          <p>In HTML, each element is made up of 3 parts:</p>
+          <!-- 
+      "type" and "start" elements are deprecated on some browsers
+     -->
+          <ol type="a" start="5">
+            <li>The opening tag</li>
+            <li>The closing tag</li>
+            <li>The actual element</li>
+          </ol>
+          <p>
+            You can learn more at
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              >MDN Web Docs</a
+            >
+          </p>
+
+          <h3>Why should you learn HTML?</h3>
+          <p>
+            There are countless reasons for learning the fundamental language of
+            the web. Here are 5 of them:
+          </p>
+          <ul type="square">
+            <li>To be able to use the fundamental web dev language</li>
+            <li>
+              To hand-craft beautiful websites instead of relying on tools like
+              Worpress or Wix
+            </li>
+            <li>To build web applications</li>
+            <li>To impress friends</li>
+            <li>To have fun 😃</li>
+          </ul>
+
+          Hopefully you learned something new here. See you next time!
+        </article>
+        <aside>
+          <h4>Related posts</h4>
+          <ul class="related">
+            <li class="related-posts">
+              <img src="img/related-1.jpg" alt="" height="75px" width="75px" />
+              <div>
+                <a href="#" class="related-link"
+                  >How to Learn Web Developement</a
+                >
+                <p class="related-author">By Jonas Schmedtmann</p>
+              </div>
+            </li>
+            <li class="related-posts">
+              <img src="img/related-2.jpg" alt="" height="75px" width="75px" />
+              <div>
+                <a href="#" class="related-link">The Unknown Powers of CSS</a>
+                <p class="related-author">By Jim Dillon</p>
+              </div>
+            </li>
+            <li class="related-posts">
+              <img src="img/related-3.jpg" alt="" height="75px" width="75px" />
+              <div>
+                <a href="#" class="related-link">Why JavaScript is Awesome</a>
+                <p class="related-author">By Matilda</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <footer>
+        <p id="copyright" class="copyright text">
+          Copyright &copy; 2027 by The Code Magazine
+        </p>
+      </footer>
+      <!-- <a href="#">Google</a> -->
+    </div>
+
+    <button>Like❤️</button>
+  </body>
+</html>

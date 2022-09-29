@@ -1,0 +1,14 @@
+
+We can directly write the code in the code editor provided in the goormide and to run this source file we use source command.
+
+But first we need to make sure that we are using the right database;
+
+We can verify this by using the following command
+
+	
+	USE <database_name>;
+
+
+Then run the .sql file in the terminal.
+
+	source <file_name>.sql;
