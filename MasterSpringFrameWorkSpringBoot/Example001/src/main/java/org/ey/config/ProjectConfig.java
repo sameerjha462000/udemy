@@ -10,9 +10,8 @@ public class ProjectConfig {
 
     /**
      * A bean is an object in the spring context
-     * To mark a bean, We use @Bean annotation. This helps us spring to load the object into the IOC container
-     * This annotation is used before a method.
-     * The method on which this annotation is applied must return an Instance of a class
+     * To mark a POJO as bean we use the @Bean annotation. This is written over a method which returns
+     * an instance of a class.
      */
     @Bean
     public Pair pair(){
