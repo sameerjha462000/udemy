@@ -5,6 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+
+/**
+ * @Configuration is used when we have methods inside the class that return beans
+ */
 @Configuration
 public class ProjectConfig {
 
