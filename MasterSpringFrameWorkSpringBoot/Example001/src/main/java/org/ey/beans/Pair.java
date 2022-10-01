@@ -7,6 +7,7 @@ public class Pair {
 
     public Pair(){}
     public Pair(int first, int second){
+        System.out.println("I was created");
         this.first = first;
         this.second = second;
     }
