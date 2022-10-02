@@ -39,6 +39,13 @@ public class Main {
         Person mother = new Person("Bhoomika", 45);
         Supplier<Person> s2 = () -> mother;
 
+        var p3 = s2.get();
+        System.out.println(p3);
+
+        var p4 =s2.get();
+        System.out.println(p4);
+        System.out.println(p3==p4);
+
         context.registerBean("Bhoomika", Person.class, s2);
         /**
          * This time we also need to pass the name of the bean as well as we already have a bean of person inside the spring context.
