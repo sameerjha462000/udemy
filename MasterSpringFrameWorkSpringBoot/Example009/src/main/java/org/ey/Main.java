@@ -11,6 +11,9 @@ public class Main {
 
         System.out.println(v.getName());
 
+        /**
+         * Supplier is used to store the instance of a class.
+         */
         Supplier<Person> s1 = () -> {
             Person p = new Person("Abhishek", 22);
             return p;

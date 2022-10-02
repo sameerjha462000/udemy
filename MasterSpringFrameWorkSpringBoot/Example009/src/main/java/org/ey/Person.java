@@ -1,5 +1,8 @@
 package org.ey;
 
+/**
+ * I have not registered it inside the bean as I will register it during the runtime.
+ */
 public class Person {
     private String name;
     private int age;
