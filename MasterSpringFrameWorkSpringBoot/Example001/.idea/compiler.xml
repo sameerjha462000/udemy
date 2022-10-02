@@ -11,6 +11,8 @@
         <module name="Example004" />
         <module name="Example005" />
         <module name="Example006" />
+        <module name="Example007" />
+        <module name="Example008" />
         <module name="Example001" />
       </profile>
     </annotationProcessing>
