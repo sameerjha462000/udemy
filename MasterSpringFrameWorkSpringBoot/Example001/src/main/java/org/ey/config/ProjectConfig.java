@@ -7,7 +7,9 @@ import org.springframework.context.annotation.Primary;
 
 
 /**
- * @Configuration is used when we have methods inside the class that return beans
+ * Spring @Configuration annotation is part of the spring core framework.
+ * It indicates that the class has @Bean definition inside it so that spring container can process the class
+ * and generate spring beans to be used in the application.
  */
 @Configuration
 public class ProjectConfig {
