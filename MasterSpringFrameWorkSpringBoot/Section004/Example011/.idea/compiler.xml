@@ -9,9 +9,13 @@
         <module name="Example013" />
         <module name="Example014" />
         <module name="Example015" />
+        <module name="CodingExample" />
         <module name="Example011" />
         <module name="Example012" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Example016" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
