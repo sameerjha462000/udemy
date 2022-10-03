@@ -44,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/Abhishek/OneDrive/Desktop/udemy/MasterSpringFrameWorkSpringBoot/Section004/Example016",
+    "last_opened_file_path": "C:/Users/Abhishek/OneDrive/Desktop/udemy/MasterSpringFrameWorkSpringBoot/Section004/Example012",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -63,10 +63,12 @@
       <recent name="org.ey" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.ey.Main" />
-      <module name="Example012" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Section005/Example018" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.ey.*" />
@@ -116,9 +118,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.ey.Main" />
-      <module name="Example011" />
+      <module name="Example017" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.ey.*" />
@@ -131,11 +135,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

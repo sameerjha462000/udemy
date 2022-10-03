@@ -6,18 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Example017" />
-        <module name="Example018" />
+        <module name="CodingExample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CodingExample" target="19" />
-      <module name="Example011" target="19" />
-      <module name="Example012" target="19" />
-      <module name="Example013" target="19" />
-      <module name="Example014" target="19" />
-      <module name="Example015" target="19" />
-      <module name="Example016" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>
