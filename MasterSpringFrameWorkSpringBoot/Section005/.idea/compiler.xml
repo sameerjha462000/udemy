@@ -10,8 +10,5 @@
         <module name="Example018" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Section005" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

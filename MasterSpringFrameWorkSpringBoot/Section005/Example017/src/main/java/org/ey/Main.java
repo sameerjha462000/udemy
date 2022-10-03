@@ -10,6 +10,5 @@ public class Main {
         Vehicle v2 = context.getBean(Vehicle.class);
 
         System.out.println(v1 == v2); // true as by default we have singleton scope and that returns only 1 instance per bean.
-        System.out.println("My name is Abhishek Jha");
     }
 }
