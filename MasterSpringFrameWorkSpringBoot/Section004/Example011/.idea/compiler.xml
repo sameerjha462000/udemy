@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Example013" />
         <module name="Example014" />
+        <module name="Example015" />
         <module name="Example011" />
         <module name="Example012" />
       </profile>

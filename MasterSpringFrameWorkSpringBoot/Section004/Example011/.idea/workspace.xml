@@ -44,12 +44,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/Abhishek/OneDrive/Desktop/udemy/MasterSpringFrameWorkSpringBoot/Section004/Example014",
+    "last_opened_file_path": "C:/Users/Abhishek/OneDrive/Desktop/udemy/MasterSpringFrameWorkSpringBoot/Section004/Example015",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Abhishek\OneDrive\Desktop\udemy\MasterSpringFrameWorkSpringBoot\Section004\Example015" />
+      <recent name="C:\Users\Abhishek\OneDrive\Desktop\udemy\MasterSpringFrameWorkSpringBoot\Section004\Example015\src\main\java\org\ey" />
       <recent name="C:\Users\Abhishek\OneDrive\Desktop\udemy\MasterSpringFrameWorkSpringBoot\Section004\Example014" />
       <recent name="C:\Users\Abhishek\OneDrive\Desktop\udemy\MasterSpringFrameWorkSpringBoot\Section004\Example014\src\main\java\org\ey" />
       <recent name="C:\Users\Abhishek\OneDrive\Desktop\udemy\MasterSpringFrameWorkSpringBoot\Section004\Example013\src\main\java\org\ey" />
@@ -58,7 +60,7 @@
       <recent name="org.ey" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.ey.Main" />
       <module name="Example012" />
@@ -98,6 +100,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.ey.Main" />
+      <module name="Example015" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.ey.Main" />
       <module name="Example011" />
@@ -113,6 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
