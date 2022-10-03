@@ -1,0 +1,2 @@
+1. The `@Autowired` annotation marks on a field, setter method, constructor is used to auto-wire the beans.
+2. When we mark the `Vehicle` with `@Autowired` annotation, the Spring would search for it in the available beans and would wire it with the corresponding bean in the spring context.
