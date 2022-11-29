@@ -1,0 +1,64 @@
+1. How to create a table :
+	
+	first select the database in which you want to create a table. This could be done by the following command :
+	(a)	CREATE DATABASE <database_name>;
+	
+	Now after creating the database use the current database. For this we use the USE query:
+	(b)	USE <database_name>;
+	
+	But how to know the current database :
+	(c)	select database();
+
+	Now create a table in the current database :
+	(d)	CREATE TABLE <table_name>
+  		(
+    			<column_name> data_type,
+    			<column_name> data_type
+  		);
+
+
+NOTE: It is a convention that table names be kept plural (as tables are collection of data).
+
+
+2. How do we know that table has been created ?:
+
+	(a)	SHOW TABLES;
+		-- This query would show all the tables that are present in the current database.
+
+
+3. How to see the columns in the table ?:
+
+	SHOW COLUMNS FROM <table_name>;
+
+	-- This query would show all the columns that are present int the current table.
+
+	{OR MAYBE WE COULD ALSO USE THE FOLLOWING COMMAND}
+	
+	DESC <table_name>;
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////EXAMPLE////////////////////////////////////////////////////////////////////////
+
+1. Let us say we want to create a whose name is "cats" inside the database "cat_app".
+Ans: 
+	CREATE DATABASE cat_app;
+	USE cat_app;
+	CREATE TABLE cats(name VARCHAR(100), age INT);
+
+extra: Now to see the current table we have,
+	
+	SHOW TABLES;
+	SHOW COLUMNS FROM cats; // DESC cats;
+
+
+
+
+
+
+
+
+
+
