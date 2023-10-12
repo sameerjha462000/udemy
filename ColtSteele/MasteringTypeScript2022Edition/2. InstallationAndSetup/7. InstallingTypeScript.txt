@@ -1,5 +1,0 @@
-1. To install TypeScript, You first need to install nodejs which you can install by `https://nodejs.org/en/download/`.
-2. After this open command prompt and check the version of nodejs using `node -v` and also check the version of npm using
-   `npm -v`.
-3. Now to install TypeScript globally, we type `npm install -g typescript`. This would install the TypeScript globally.
-4. Now to check the version of TypeScript installed we type `tsc -v`.

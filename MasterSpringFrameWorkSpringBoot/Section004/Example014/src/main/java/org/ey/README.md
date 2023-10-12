@@ -1,2 +1,0 @@
-1. We can also do wiring using the `@Autowired` annotation on setter methods and this would be run as soon as the bean of `person` gets created.
-2. This method is also `NOT` preferred in production as we cannot mark the fields as `final`.
