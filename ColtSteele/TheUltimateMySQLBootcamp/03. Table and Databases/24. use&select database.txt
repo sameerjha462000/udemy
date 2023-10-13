@@ -1,0 +1,38 @@
+1. To use a database :
+	USE <database_name>;
+
+	For example := If we want to use the database "dog_walking_app"
+		       then,
+
+	USE dog_walking_app;
+
+
+2. To view the database currently in use :
+	
+	select database();
+
+	OUTPUT := 
+
+	+-----------------+
+	| database()      |
+	+-----------------+
+	| dog_walking_app |
+	+-----------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
