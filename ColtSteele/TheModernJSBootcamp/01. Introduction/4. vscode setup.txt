@@ -1,0 +1,13 @@
+Install VSCODE
+
+
+Extensions to be installed :
+	
+1. Live server
+2. Material Theme
+3. CSS peak
+4. Color highlight
+5. Bracket pair colorizer
+6. React snippets
+7. ES7 React/Redux/GraphQL/React-Native snippets
+8. Prettier now

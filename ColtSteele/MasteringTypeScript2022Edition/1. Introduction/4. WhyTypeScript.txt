@@ -1,0 +1,10 @@
+1. Fuck you JavaScript
+2. JavaScript is quirky. It is a little bit of weird programming language. It is dynamically typed.
+3. But why is the JS the way it is today ?
+	-- JavaScript was never intended to be the ubiquitous language that it is today.
+4. TypeScript is JavaScript with types.
+5. TypeScript is a super set of JavaScript. Every code which is valid in JS is also valid in TypeScript.
+
+
+
+

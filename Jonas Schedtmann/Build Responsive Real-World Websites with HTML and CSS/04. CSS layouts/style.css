@@ -1,0 +1,482 @@
+/* The body element is the parent element of all the elements in our browser.
+   So anything which we set in body element would be inherited to all the elements inside the body tag.
+   But this however is not completely true as the body element transfers only those properties which are related to the text as transfering other
+   properties would not make sense.
+*/
+/* 
+  Also, One thing to keep in mind is that inherited properties have the least priority. So they can be easily overwritten.
+*/
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* font-size: 19px; */
+  /* font-style: oblique; */
+  position: relative;
+  border-top: 5px solid #1098ad; /* But this would not be transfered to all the elements as this simply does not make sense. Also, as a general rule of thumb only the "text" related properties would be transmitted. */
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px; /* top/bottom left/right */
+  margin-bottom: 60px;
+  /* height: 80px; */
+  /* The final size of the element vertically is 80 + 20(top padding) + 20(bottom pading) */
+}
+
+.main-header h1 {
+  margin: 0px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* border: 5px solid #1098ad; */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0px;
+
+  /* border-left: 5px solid #1098ad;
+  border-right: 5px solid #1098ad; */
+}
+/* here "h1" is called selector and all the content starting from 
+curly braces is called "Declaration block". A Declaration block has various styles.
+A style has a "property" and a "value". */
+
+/* This is a CSS rule */
+
+/* A CSS file has multiple CSS rules */
+h1 {
+  font-size: 26px;
+  text-transform: uppercase; /* This is the most used CSS style*/
+  font-style: italic;
+
+  /* serif has edges and is the default*/
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+
+  /*text-align is moving the element to the center of the parent element*/
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5; /*increases the spacing between the lines of a paragraph*/
+  /* color: green; */
+  margin-bottom: 15px;
+}
+
+/*
+  To style lists we style only the li elements
+*/
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p li {
+  font-family: sans-serif;
+  color: #444;
+}
+h1,
+h2,
+h3 {
+  /* We can give the colors in the two formats :
+     The first one is using rgb() and rgba() functions and the second one is using the hexadecimal values.
+     The rgb() function takes 3 values and each value can range from 0 to 255 (both inclusive).
+     The rgba() function takes 4 values. The first 3 values are the same as the rgb() function but the last value is for opacity which ranges from [0,1].
+
+     The last method for defining the function is using the hexadecimal values. The hex values start from a # symbol.
+     To understand the hex values we group them in the groups of 2. Each of the group can range from 00 to ff(255). Thus 
+     this is the same as rgb() function. If both the values in each of the 3 groups are identical, then we can also use shorthand notation.
+     For example, #00bbff can be written as #0bf.
+
+     There is also a third way to give colors. This is done using the vscode color picker.
+  */
+  color: #1098ad;
+}
+
+/*Descendant selector*/
+
+footer p {
+  font-size: 16px;
+}
+
+/*id selector*/
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*This was done to remove the bullet points from the list in the related posts*/
+.related {
+  list-style: none;
+}
+
+/* We always avoid id selectors. In real world we always use classes. */
+
+/* body {
+  background-color: palegreen;
+} */
+
+/* PSUEDO SELECTORS */
+
+/* first-child selector means that the element is the first child of its parent */
+li:first-child {
+  font-weight: bolder;
+}
+
+/* last child selector means that the element is the last child of its parent */
+li:last-child {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* selects all the p tag which are inside the "article" tag and are the first-child of their parent */
+/* article p:first-child {
+  color: red;
+} */
+
+/* STYLING HYPERLINKS -- lvha */
+/* a {  */
+/* But this is not considered a good practice as this selects all the anchor elements.
+     Remember that we can have anchor elements which do not have a href attribute.
+  */
+/* color: #1098ad; */
+/* } */
+
+/* Selects all the anchor elements which are unvisited */
+a:link {
+  color: red;
+}
+
+/* Selects all the anchor elements which have been visited */
+a:visited {
+  color: green;
+}
+
+/* when we hover the mouse cursor over the link */
+a:hover {
+  color: hotpink;
+  text-decoration: line-through;
+}
+
+/* When we keep holding the link */
+a:active {
+  color: rgb(4, 4, 28);
+  /* text decoration takes 3 paramters -- line, style and color */
+  text-decoration: underline wavy purple;
+}
+
+/* Resolving conflicts */
+
+/* !important > inline styling > id selector > class/psuedo-class selector > tag selector > universal selector */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  /* color: green; */
+  color: green !important; /* This is a simple hack incase you dont understand the priority but do not use it much often. */
+}
+
+/* 
+  Every HTML element can be viewed as a BOX. Hence the CSS BOX model.
+  The element has a content and a border. Between the content and the border we 
+  have something called as padding.
+
+  So the element can be seen as content + padding + border.
+
+  Outside the element we have something called as "margin". Margin is not a part of the element.
+  Margin is used to create space around the element.
+
+
+  Content + padding + border are the visible parts of the elements on the page.
+
+
+  The entire visible part of the element is also called as fill area. The background image and background-color 
+  always occupy the fill area.
+*/
+
+li:last-child {
+  margin-bottom: 0; /* Whenever we use 0 we do not specify any unit*/
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* In CSS we also have something called as margin collapsing. If two adjacent elements are there and one of them has a margin bottom and other has a margin top
+   then the maximum of the two gets selected. 
+*/
+
+/* To add vertical space we usually use margin-bottom. This is just a convention and not a rule written on a stone. */
+
+/* .post-img { */
+/* width: 80px; */
+/* margin-left: 50px; */
+/* margin-top: 40px; */
+/* } */
+
+.post-img {
+  /* % works on the size of the parent container */
+  width: 100%;
+  /* width: 300px; */
+  height: auto;
+  margin-top: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
+}
+
+/* .weird {
+  margin-top: 5px;
+  height: 5px;
+  width: auto;
+} */
+
+/* span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+} */
+
+/* I have a doubt. If span and img both are inline elements and since inline elements do not take vertical margin. Then why is it that
+   image takes vertical margins and span does not. 
+
+
+   The answer := The image is an inline replaced element and span is an inline non replaced element.
+*/
+
+/* nav a:link {
+  display: block;
+  margin-bottom: 2px;
+} */
+
+/* chaining of psuedo class */
+/* nav a:link:last-child {
+  margin-bottom: 0;
+} */
+
+nav a:link {
+  display: inline-block;
+  /* margin-top: 10px; */
+  margin-right: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* Images are by default inline-block elements */
+
+/* ABSOLUTE POSITIONING AND RELATIVE POSITIONING */
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  /* top: 0;
+  left: 0; */
+  bottom: 50px;
+  right: 50px;
+  position: absolute;
+}
+
+h1::first-letter {
+  font-style: normal;
+}
+
+/* p::first-line {
+  background-color: red;
+} */
+
+/* Makes the first-line of the p tag red which is inside the header element */
+header p::first-line {
+  /* background-color: red; */
+}
+
+h2::first-letter {
+  font-size: 50px;
+}
+
+/* We also have something called as adjacent sibling selector */
+
+/* selects every li tag which is has a li tag just above it */
+/* li + li {
+  background-color: green;
+} */
+
+/* We also have 2 important psudeo elements */
+h2 {
+  position: relative;
+  /* background-color: green; */
+}
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  color: #444;
+  background-color: yellow;
+  top: -10px;
+  right: -20px;
+  position: absolute;
+  padding: 5px 10px;
+}
+
+/* ----------------------------------------------- FLOATS ----------------------------------------------------------------------------------- */
+/* .author-img { */
+/* We can use left, right, none */
+/* float: left;
+} */
+
+/* .author {
+  margin-left: 10px;
+  float: left;
+} */
+
+/* When h1 and nav made to float, the height of the main-header becomes 0. Since all of its children are floating i.e, they are out of flow. */
+/* As a result of which the "main-header" collapses. */
+/* h1 {
+  float: left;
+} */
+
+/* nav {
+  float: right;
+  display: block; */
+/* padding-bottom: 20px; */
+/* } */
+/* .clear {
+  clear: both;
+} */
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+} */
+
+article {
+  /* background-color: green; */
+}
+
+aside {
+  /* background-color: red; */
+}
+
+footer {
+  /* background-color: yellow; */
+}
+
+/* article {
+  float: left;
+  width: 700px;
+}
+aside {
+  float: right;
+  width: 300px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding: 20px;
+}
+footer {
+  clear: both;
+} */
+
+/* FLEXBOXES */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-posts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  /* margin-bottom: 5px; This would not work as links are inline elements so we need to convert them into block elements */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+
+article {
+  flex: 0 0 825px;
+}
+
+aside {
+  /* grow shrink basis */
+  flex: 0 0 300px;
+}

@@ -1,0 +1,22 @@
+1. To drop a table from a database :
+
+	DROP TABLE <table_name>;
+
+NOTE: Be careful with this command
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+JAVA beans can have 4 types of scopes. These are
+
+-- session
+-- page
+-- application
+-- request
+
+
+What is a session scope?
+
+ -- In session scope, different bean is created for individual session. For example := When we are on chrome bean b1 would
+    be created and when we are on firefox a different bean b2 would be created.
+
+
+What is an application scope?
+
+ -- In application scope, only a single bean would be created for all the sessions. So if a change is made during one session,
+    then that would be reflected in other sessions as well.
+
+What is a page scope?
+
+ -- In page scope, changes made by a jsp to a bean would not be reflected on the other pages. For example := When we open 
+    setPageProperty.jsp then the changes made by it would be limited to only this page and no change would be seen in getPageProperty.java.

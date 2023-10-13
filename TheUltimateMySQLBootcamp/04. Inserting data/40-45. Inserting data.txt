@@ -1,0 +1,22 @@
+1. To insert data :
+
+	INSERT INTO <table_name>(column_name_one, column_name_two) 
+	VALUES  (value_one, value_two);
+
+2. To insert multiple data :
+
+	INSERT INTO <table_name>(column_name_one, column_name_two)
+	VALUES  (value, value),
+		(value, value),
+		(value, value),
+		.
+		.
+		.
+		(value, value);
+
+
+
+
+
+
+
